@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+    font-family: "QuartzoBold";
+    src: url("/FrontEnd/Portfolio/fonts/QuartzoBold-W9lv.ttf");
+}
+/*.first_bg_style{
+    font-family: 'QuartzoBold', sans-serif;
+    color: #29a68885;
+    -webkit-text-stroke: 2px var(--color-main);
+}*/
+
+:root{
+	--color-bg:#ffffff;
+	--color-main:#6AAD46;
+	--color-deep:#548D5A;
+	--color-white:white;
+    --color-deep-white:#e5e5e5;
+	--color-black:black;
+	--color-smart-black:#3C3C3C;
+}
+body{
+	background:var(--color-bg);
+	font-family: sans-serif;
+	color: var(--color-black);
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* @media screen and (max-width: 1300px){
+body {
+    min-width: 100%;
+}
+} */
+
+/* /////  Top Nav Section Start ------------------- */
+.top_nav{
+    widows: 100%;
+    height: 35px;
+    padding: 4px 0px;
+    background: var(--color-smart-black);
+    color: white;
+}
+.top_nav  li{
+    list-style: none;
+    float: right;
+    padding: 2px 15px;
+    font-size: 16px;
+    color: white;
+    border-right: 2px solid #646464;
+}
+.top_nav  li i{
+    padding: 0px;
+    font-size: 18px;
+    color: var(--color-white);
+}
+.top_nav  li a{
+    color: var(--color-deep-white);
+}
+.top_nav li:nth-child(1){
+    border-right: none;
+    padding-right: 0;
+}
+.top_nav li:nth-last-child(1) i,
+.top_nav li:nth-last-child(2) i{
+    padding: 3px 10px 0px 0px;
+    font-size: 14px;
+}
+
+/* /////  Top Nav Section End ------------------- */
+
+
+
+
+/* /////  Header Section Start ------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------*/
+/*Responsive Start*/
+
+/*iPad Pro Start*/
+@media screen and (max-width: 1025px) {
+
+
+}
+/*iPad Pro End*/
+
+
+/*iPad Start*/
+@media screen and (max-width: 770px) {
+   
+
+}
+/*iPad End*/
+
+
+
+/*MiniMax Start*/
+@media screen and (max-width: 540px) {
+
+}
+/*MiniMax End*/
+
+
+/*iPhone S Start*/
+@media screen and (max-width: 414px) {
+ 
+
+
+}
+/*iPhone S End*/
+
+/*iPhone 12 Pro / Pixel 5 Start*/
+@media screen and (max-width: 395px) {
+
+
+}
+/*iPhone 12 Pro / Pixel 5 End*/
+
+
+
+/*iPhone 5/SE 6/7/8 Start*/
+@media screen and (max-width: 375px) {
+
+
+}
+/*iPhone 5/SE 6/7/8 End*/
+
+
+
+/*----------------*/
+/*Responsive End*/
