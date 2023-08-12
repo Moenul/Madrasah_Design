@@ -6,6 +6,10 @@
     font-family: "LiNiladriRongtuliUnicode";
     src: url("/FrontEnd/Madrasah/fonts/Li Alinur Tatsama Unicode.ttf");
 }
+@font-face {
+    font-family: "Jomhuria";
+    src: url("/FrontEnd/Madrasah/fonts/Jomhuria-Regular.ttf");
+}
 /* .first_bg_style{
     font-family: 'LiNiladriRongtuliUnicode', sans-serif;
     color: #29a68885;
@@ -83,6 +87,7 @@ body {
     position: fixed;
     top: 35px;
     transition: all .5s ease-in-out;
+    z-index: 100;
 }
 
 .nav_bar .container{
@@ -189,12 +194,252 @@ body {
 /* /////  Header Section Start ------------------- */
 
 .header_section{
-    height: 140vh;
+    position: relative;
+}
+.header_section .header_slider{
+    width: 100%;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+    position: relative;
+}
+.header_section .header_slider .slider{
+    width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.header_section .header_slider .slider_image{
+    width: 100%;
+	height: 100%;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header_section .container p {
+    font-family: 'Jomhuria', sans-serif;
+    position: absolute;
+    font-size: 100px;
+    color: #ffffffe0;
+    top: 50%;
+    font-weight: bold;
+    -webkit-text-stroke: 0.1px #4c4c4c;
+    text-shadow: -4px 4px 5px #404040;
+}
+/* /////  Header Section End ------------------- */
+
+
+
+/* /////  Update Section Start ------------------- */
+/* /////  Notice ------------------- */
+.updates_section {
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+}
+.updates_section .notice_section{
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0px 50px 0px 0px;
+}
+.updates_section .notice_section .section_title{
+    width:100%;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.updates_section .notice_section .section_bar{
+    width:100%;
+    padding: 20px;
+    background: wheat;
+}
+
+
+.updates_section .notice_section .section_bar{
+    width: 100%;
+    min-height: 10px;
+    max-height: 435px;
+    overflow-y: scroll;
+    padding: 20px;
+    background: wheat;
+    border: 1px solid wheat;
+}
+.updates_section .notice_section .section_bar::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 40px;
+}
+/* .updates_section .notice_section .section_bar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(206 206 206 / 15%);
+} */
+.updates_section .notice_section .section_bar::-webkit-scrollbar-thumb {
+	background-color: var(--color-smart-black);
+    border: 3px solid #ffffffc7;
+    border-radius: 10px;
 }
 
 
 
 
+.updates_section .notice_section .section_bar .notice_bar{
+    width:100%;
+    background: white;
+    display: flex;
+    margin-bottom: 10px;
+}
+.updates_section .notice_section .section_bar .notice_bar .image_box {
+    width: 70px;
+    height: 70px;
+    background: #efefef;
+    display: inline-block;
+    font-size: 70px;
+    line-height: 0;
+    color: #cd1309;
+}
+.updates_section .notice_section .section_bar .notice_bar .notice_box{
+    width:calc(100% - 70px);
+    height: 70px;
+    padding: 8px 15px;
+    background: white;
+    display: inline-block;
+}
+.updates_section .notice_section .section_bar .notice_bar .notice_box .notice_title{
+    font-size: 18px;
+    margin-bottom: 5px;
+    height: 25px;
+    word-break: break-all;
+    overflow: hidden;
+}
+.updates_section .notice_section .section_bar .notice_bar .notice_box .notice_date{
+    width:calc(100% - 120px);
+    display: inline-block;
+}
+.updates_section .notice_section .section_bar .notice_bar .notice_box .notice_download{
+    width: 120px;
+    float: right;
+    text-align: center;
+}
+.updates_section .notice_section .section_bar .load_more{
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+.updates_section .notice_section .section_bar .load_more a{
+    color: var(--color-smart-black);
+}
+/* /////  Notice ------------------- */
+
+
+/* /////  Event ------------------- */
+.updates_section .event_section{
+    width: calc(40% - 5px);
+    height: auto;
+    /* overflow: hidden; */
+    float: right;
+}
+.updates_section .event_section .section_title{
+    width:100%;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.updates_section .event_section .section_bar{
+    width:100%;
+}
+.updates_section .event_section .section_bar .event_bar{
+    width: 100%;
+    height: 120px;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 9px -3px black;
+}
+.updates_section .event_section .section_bar .event_bar .event_date{
+    width: 120px;
+    height: 120px;
+    background: #48cd00;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.updates_section .event_section .section_bar .previous_event_bar .event_date{
+    background: #f5b33b;
+}
+
+
+.updates_section .event_section .section_bar .event_bar .event_date .event_date_dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 60%;
+    background: var(--color-smart-black);
+    position: absolute;
+    top: 10px;
+}
+.updates_section .event_section .section_bar .event_bar .event_date .event_date_dot:nth-child(1){
+    left: 10px;
+}
+.updates_section .event_section .section_bar .event_bar .event_date .event_date_dot:nth-child(2){
+    right: 10px;
+}
+.updates_section .event_section .section_bar .event_bar .event_date .date_day {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #1e1e1e;
+}
+.updates_section .event_section .section_bar .event_bar .event_date .date_month {
+    font-size: 16px;
+    color: #1e1e1e;
+}
+.updates_section .event_section .section_bar .event_bar .event_date .date_year {
+    width: 100%;
+    background: var(--color-smart-black);
+    color: white;
+    padding: 6px 0px;
+    margin-top: 7px;
+}
+
+
+
+
+
+.updates_section .event_section .section_bar .event_bar .event_box{
+    width: calc(100% - 120px);
+    height: 120px;
+    background: #c0f3a5;
+    float: right;
+    padding: 8px;
+}
+.updates_section .event_section .section_bar .previous_event_bar .event_box{
+    background: #f5b33b6b;
+}
+
+.updates_section .event_section .section_bar .event_bar .event_box .event_title{
+    font-size: 16px;
+    line-height: 1.1;
+    height: 36px;
+    overflow: hidden;
+}
+.updates_section .event_section .section_bar .event_bar .event_box .event_desc{
+    font-size: 14px;
+    line-height: 1.1;
+    margin-top: 5px;
+    color: #484848;
+    height: 48px;
+    overflow: hidden;
+}
+.updates_section .event_section .section_bar .event_bar .event_box .event_time{
+    font-size: 16px;
+    line-height: 1.1;
+    height: 18px;
+    overflow: hidden;
+}
+
+.updates_section .event_section .section_bar .previous_event{
+    margin-bottom: 10px;
+}
+
+
+/* /////  Event ------------------- */
+/* /////  Update Section End ------------------- */
 
 
 

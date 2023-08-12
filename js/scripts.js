@@ -24,6 +24,17 @@ $(document).ready(function(){
 
 
 
+    // Cover Slider Script
+    $("#slider > .slider_image:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slider > .slider_image:first').fadeOut(2000).next().fadeIn(2000).end().appendTo('#slider');
+    }, 5000);
+    // -----------
+
+    
+
+
     // $(".nav_button").click(function() {
     //     $(this).toggleClass('nav_button_active');
     //     $(".nav_list").toggleClass('nav_list_active');
