@@ -198,7 +198,7 @@ body {
 }
 .header_section .header_slider{
     width: 100%;
-    height: calc(100vh - 50px);
+    height: 100vh;
     overflow: hidden;
     position: relative;
 }
@@ -216,11 +216,14 @@ body {
 	background-size: cover;
 }
 .header_section .container p {
+    width: 100%;
+    text-align: center;
     font-family: 'Jomhuria', sans-serif;
     position: absolute;
-    font-size: 100px;
+    font-size: 120px;
     color: #ffffffe0;
     top: 50%;
+    left: 0;
     font-weight: bold;
     -webkit-text-stroke: 0.1px #4c4c4c;
     text-shadow: -4px 4px 5px #404040;
@@ -441,6 +444,390 @@ body {
 /* /////  Event ------------------- */
 /* /////  Update Section End ------------------- */
 
+/* /////  Section Name ------------------- */
+.section_name{
+    width: max-content;
+    padding: 0px 35px 0px 0px;
+    position: relative;
+    font-size: 30px;
+    text-shadow: 1px 2px 3px #5e5e5eb5;
+    margin-bottom: 40px;
+    -webkit-text-stroke: 1px #ffffff73;
+}
+.section_name::before{
+    content: '';
+    width: 100%;
+    height: 15px;
+    background: #6aad468c;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    border-radius: 2px;
+    z-index: -1;
+}
+/* /////  Section Name ------------------- */
+
+/* /////  Gallery Section Start ------------------- */
+.gallery_section{
+    min-height: 100vh;
+    padding: 40px 0px 0px 0px;
+}
+.gallery_section .gallery{
+    width:100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gallery_section .gallery .gallery_item{
+    width: 30%;
+    height: 300px;
+    background: #484848;
+    display: inline-block;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: black;
+    position: relative;
+    display: flex;
+}
+.gallery_section .gallery .gallery_item:nth-child(1){
+    width: 40%;
+    height: 400px;
+}
+.gallery_section .gallery .gallery_item:nth-child(2){
+    width: 55%;
+    height: 400px;
+}
+
+.gallery_section .gallery .gallery_item img{
+    width: auto;
+    transition: all .5s ease-in-out;
+}
+.gallery_section .gallery .gallery_item:hover img{
+    scale: 1.2;
+}
+/* /////  Gallery Section End ------------------- */
+
+
+/* /////  About Section Start ------------------- */
+.about_section{
+    width: 100%;
+    min-height: 100vh;
+    padding:40px 0px 0px 0px;
+}
+.about_section .about_image_bar{
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow:1px 1px 7px #3d3d3d;
+    display: inline-block;
+}
+.about_section .about_image_bar img{
+    width: 100%;
+}
+.about_section .about_desc_bar{
+    width: calc(100% - 450px);
+    padding-left: 50px;
+    height: 500px;
+    float: right;
+}
+.about_section .about_desc_bar .desc_title{
+    font-size: 35px;
+    text-align: center;
+    color: #548d5a;
+}
+.about_section .about_desc_bar p{
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* /////  About Section End ------------------- */
+
+/* /////  Donor Member Section Start ------------------- */
+
+.donor_member_section{
+    width: 100%;
+    min-height: 50vh;
+    padding:40px 0px 0px 0px;
+    overflow: hidden;
+}
+.donor_member_section .donor_members,
+.instructor_section .instructors{
+    width: 100%;
+    height: 280px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.donor_member_section .donor_members::-webkit-scrollbar,
+.instructor_section .instructors::-webkit-scrollbar{
+    height: 10px;
+    border-radius: 40px;
+}
+.donor_member_section .donor_members::-webkit-scrollbar-track, 
+.instructor_section .instructors::-webkit-scrollbar-track 
+{
+  box-shadow: inset 0 0 5px rgb(206 206 206 / 15%);
+}
+.donor_member_section .donor_members::-webkit-scrollbar-thumb,
+.instructor_section .instructors::-webkit-scrollbar-thumb{
+	background-color: var(--color-smart-black);
+    border: 3px solid #ffffffc7;
+    border-radius: 10px;
+}
+
+.donor_member_section .donor_members .member{
+    width: 200px;
+    height: 250px;
+    background: #6aad466e;
+    border: 1px solid var(--color-deep);
+    padding: 4px;
+    margin-right: 30px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.donor_member_section .donor_members .member .photo{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid var(--color-deep);
+    margin-top: 16px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.donor_member_section .donor_members .member .photo img{
+    width: 100%;
+}
+.donor_member_section .donor_members .member .name{
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    word-spacing: -2px;
+}
+.donor_member_section .donor_members .member .title{
+    font-size: 16px;
+    text-align: center;
+    color: #64473c;
+}
+
+
+
+/* /////  Donor Member Section End ------------------- */
+
+
+
+
+/* /////  Instructor Section Start ------------------- */
+
+.instructor_section{
+    width: 100%;
+    min-height: 50vh;
+    padding:40px 0px 0px 0px;
+}
+.instructor_section .instructors{
+    height: 230px;
+}
+.instructor_section .instructors .instructor{
+    width: 200px;
+    height: 250px;
+    margin-right: 30px;
+    display: inline-block;
+}
+.instructor_section .instructors .instructor .photo{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 5px solid var(--color-deep);
+    margin-bottom: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.instructor_section .instructors .instructor .photo img{
+    width: 100%;
+}
+.instructor_section .instructors .instructor .name{
+    font-size: 16px;
+    text-align: center;
+    color: var(--color-deep);
+    word-spacing: -2px;
+}
+.instructor_section .instructors .instructor .title{
+    font-size: 16px;
+    text-align: center;
+    color: var(--color-smart-black);
+}
+
+
+/* /////  Instructor Section End ------------------- */
+
+
+/* /////  Contact Section Start ------------------- */
+
+.contact_section{
+    width: 100%;
+    min-height: 50vh;
+    padding:40px 0px 0px 0px;
+}
+.contact_section .address_sction{
+    width: 50%;
+    height: auto;
+    padding:10px;
+    display: inline-block;
+}
+.contact_section .address_sction .option_title{
+    width: 100%;
+    font-size: 18px;
+    color: var(--color-smart-black);
+}
+.contact_section .address_sction .option_title i{
+    padding: 0px 20px 0px 0px;
+    font-size: 16px;
+}
+.contact_section .address_sction .option_bar{
+    width: 100%;
+    padding:0px 0px 0px 37px;
+    margin-bottom: 20px;
+}
+.contact_section .address_sction .option_bar li{
+    list-style: none;
+    padding: 3px 0px;
+}
+.contact_section .address_sction .option_bar .location_bar{
+    width: 100%;
+    height: 300px;
+    background: wheat;
+}
+
+
+.contact_section .mail_sction{
+    width: 50%;
+    min-height: 400px;
+    height: auto;
+    padding: 0px 30px;
+    float: right;
+}
+.contact_section .mail_sction .sction_title{
+    font-size: 30px;
+    margin: 30px 0px 10px 0px;
+}
+
+
+.contact_section .mail_sction input{
+	width: 100%;
+    margin-bottom: 10px;
+    padding: 8px 8px;
+    border: 1px solid var(--color-smart-black);
+    background: var(--color-smart-black);
+    color: white;
+    border-radius: 4px;
+}
+.contact_section .mail_sction input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ebebeb;
+}
+.contact_section .mail_sction input::-moz-placeholder { /* Firefox 19+ */
+  color: #ebebeb;
+}
+.contact_section .mail_sction input::-ms-input-placeholder { /* IE 10+ */
+  color: #ebebeb;
+}
+.contact_section .mail_sction input::-moz-placeholder { /* Firefox 18- */
+  color: #ebebeb;
+}
+.contact_section .mail_sction input:focus{
+	outline: 2px solid var(--color-main);
+}
+.contact_section .mail_sction input:focus::-webkit-input-placeholder{
+	color:#8c8c8c;
+}
+.contact_section .mail_sction input:focus::-moz-placeholder{
+	color:#8c8c8c;
+}
+.contact_section .mail_sction input:focus::-ms-input-placeholder{
+	color:#8c8c8c;
+}
+.contact_section .mail_sction input:focus::-moz-placeholder{
+	color:#8c8c8c;
+}
+
+.contact_section .mail_sction textarea{
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 8px 8px;
+	border:1px solid var(--color-smart-black);
+	background: var(--color-smart-black);
+	color: white;
+    border-radius: 4px;
+}
+.contact_section .mail_sction textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ebebeb;
+}
+.contact_section .mail_sction textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #ebebeb;
+}
+.contact_section .mail_sction textarea::-ms-input-placeholder { /* IE 10+ */
+  color: #ebebeb;
+}
+.contact_section .mail_sction textarea::-moz-placeholder { /* Firefox 18- */
+  color: #ebebeb;
+}
+.contact_section .mail_sction textarea:focus{
+	outline: 2px solid var(--color-main);
+}
+.contact_section .mail_sction textarea:focus::-webkit-input-placeholder{
+	color:#8c8c8c;
+}
+.contact_section .mail_sction textarea:focus::-moz-placeholder{
+	color:#8c8c8c;
+}
+.contact_section .mail_sction textarea:focus::-ms-input-placeholder{
+	color:#8c8c8c;
+}
+.contact_section .mail_sction textarea:focus::-moz-placeholder{
+	color:#8c8c8c;
+}
+.contact_section .mail_sction button{
+    width: 100%;
+}
+
+/* /////  Contact Section End ------------------- */
+
+
+/* /////  Footer Section Start ------------------- */
+
+.footer{
+    width: 100%;
+    height: auto;
+    background: var(--color-smart-black);
+    color: white;
+    padding:50px 0px;
+}
+.footer .footer_condition{
+    text-align: center;
+    font-family: system-ui;
+}
+.footer .footer_condition i{
+    padding: 0px 15px 0px 0px;
+    font-size: 14px;
+}
+.footer .footer_condition a{
+    color: #e9e9e9;
+}
+.footer .footer_condition .copyright{
+    margin-top: 15px;
+}
+.footer .footer_condition .credit{
+    margin-top: 15px;
+}
+
+/* /////  Footer Section End ------------------- */
 
 
 
