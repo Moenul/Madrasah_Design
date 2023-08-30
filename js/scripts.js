@@ -32,16 +32,12 @@ $(document).ready(function(){
     }, 5000);
     // -----------
 
-    
-
-
-    // $(".nav_button").click(function() {
-    //     $(this).toggleClass('nav_button_active');
-    //     $(".nav_list").toggleClass('nav_list_active');
-    // });
-
-
-
+    // Nav list and button Script
+    $(".nav_button").click(function() {
+        $(this).toggleClass('nav_button_active');
+        $(".nav_list").toggleClass('nav_list_active');
+     });
+    // --------------------------
 
 
 });
