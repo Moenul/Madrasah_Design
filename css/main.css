@@ -811,6 +811,48 @@ body {
 /* /////  Contact Section End ------------------- */
 
 
+/* /////  Admission Section Start ------------------- */
+
+.admission_section{
+    min-height: 100vh;
+    padding: 115px 0px 40px 0px;
+}
+.admission_section h1{
+    text-align: center;
+}
+.admission_section .instruction_bar{
+    width: 100%;
+    padding: 20px;
+    background: wheat;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.admission_section .instruction_bar p{
+    font-size: 16px;
+}
+.admission_section .instruction_bar span{
+    font-weight: bold;
+}
+.admission_section .form_section{
+    width: 100%;
+    padding: 20px 40px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.admission_section .form_section .info_bar{
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+}
+.admission_section .form_section .info_bar .info_title{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* /////  Admission Section End ------------------- */
+
+
 /* /////  Footer Section Start ------------------- */
 
 .footer{
@@ -1365,6 +1407,14 @@ body {
     margin-right: 20px;
 }
 /* /// iPhone S ///  Instructor Section End ------------------- */
+
+
+/* /// iPhone S ///  Admission Section Start ------------------- */
+.admission_section .form_section {
+    padding: 20px 25px;
+}
+/* /// iPhone S ///  Admission Section End ------------------- */
+
 
 }
 /*iPhone S End*/
